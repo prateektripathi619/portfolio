@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 270 100% 50%; /* Purple */
+  --primary-foreground: 0 0% 100%; /* White */
+  --secondary: 195 100% 75%; /* Baby Blue */
+  --secondary-foreground: 0 0% 0%; /* Black */
+  --background: 0 0% 0%; /* Black */
+  --foreground: 0 0% 100%; /* White */
+  --accent: 270 100% 60%; /* Lighter Purple */
+  --accent-foreground: 0 0% 100%; /* White */
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-400;
+  }
+
+  .portfolio-card {
+    @apply bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden transition-all duration-300 hover:border-purple-500 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)];
+  }
+
+  .portfolio-button-primary {
+    @apply bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-md transition-all duration-200 hover:shadow-[0_0_15px_rgba(168,85,247,0.5)];
+  }
+
+  .portfolio-button-secondary {
+    @apply bg-transparent border border-purple-500 text-white font-medium py-2 px-6 rounded-md transition-all duration-200 hover:bg-purple-500/10 hover:shadow-[0_0_15px_rgba(168,85,247,0.3)];
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 gradient-text;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 py-16;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
