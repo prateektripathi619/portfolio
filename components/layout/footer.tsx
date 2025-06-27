@@ -10,26 +10,31 @@ export default function Footer() {
             <Link href="/" className="text-xl font-bold gradient-text">
               Prateek Tripathi
             </Link>
-            <p className="text-zinc-400 text-sm mt-2">Designing and building digital experiences</p>
+            <p className="text-zinc-400 text-sm mt-2">
+              Designing and building digital experiences
+            </p>
           </div>
 
           <div className="flex space-x-6">
-            <Link href="https://github.com/yourusername" className="text-zinc-400 hover:text-white transition-colors">
+            <Link
+              href="https://https://github.com/prateektripathi619"
+              className="text-zinc-400 hover:text-white transition-colors"
+            >
               <Github size={20} />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/prateek-tripathi-10885326a"
               className="text-zinc-400 hover:text-white transition-colors"
             >
               <Linkedin size={20} />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="https://twitter.com/yourusername" className="text-zinc-400 hover:text-white transition-colors">
-              <Twitter size={20} />
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link href="mailto:your.email@example.com" className="text-zinc-400 hover:text-white transition-colors">
+           
+            <Link
+              href="mailto:prateekdevtripathi@gmail.com"
+              className="text-zinc-400 hover:text-white transition-colors"
+            >
               <Mail size={20} />
               <span className="sr-only">Email</span>
             </Link>
@@ -37,14 +42,20 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-zinc-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-zinc-400 text-sm">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p className="text-zinc-400 text-sm">
+            &copy; {new Date().getFullYear()} Prateek Tripathi. All rights
+            reserved.
+          </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-zinc-400 hover:text-white text-sm transition-colors">
+            <Link
+              href="/privacy"
+              className="text-zinc-400 hover:text-white text-sm transition-colors"
+            >
               Privacy Policy
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

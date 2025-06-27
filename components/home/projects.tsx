@@ -1,61 +1,67 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowUpRight, Github } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with product management, cart functionality, and payment processing.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "FINAGER - Financial Tracking Management & Taxation Automation",
+    description:
+      "A comprehensive system designed to streamline financial tracking, automate taxation workflows, and enhance reporting efficiency for institutions and enterprises.",
+    image: "/FINAGER.png?height=600&width=800",
+    tags: ["Node.js", "Express", "Next.js", "Docker", "Kubernetes", "AWS"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing creative work with a custom CMS for easy updates.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    title: "Swachhta App - Nagar Nigam Raipur",
+    description:
+      "A civic cleanliness management platform developed for Nagar Nigam Raipur, featuring a React Native mobile app for supervisors and a Next.js web admin panel. It utilizes YOLO for image-based task verification, Express.js for backend services, FCM for real-time notifications, and AWS for scalable infrastructure.",
+    image: "/swapcht.png?height=600&width=800",
+    tags: ["React Native", "Next.js", "YOLO", "Express", "FCM", "AWS"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
-    title: "Task Management App",
-    description: "A productivity application for managing tasks, projects, and team collaboration.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+    title: "Ticketing Automation System",
+    description:
+      "An AI-powered support and incident management system that leverages BERT for natural language understanding to intelligently categorize and route incoming tickets. Includes automation rules, notification triggers, and a modern dashboard for seamless team coordination and faster resolution cycles.",
+    image: "/Ticketting.png?height=600&width=800",
+    tags: ["Node.js", "Express", "React", "MongoDB", "Automation", "BERT"],
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather information with location-based forecasts and interactive maps.",
+    title: "E-commerce Platform (Microservices Architecture)",
+    description:
+      "A scalable and resilient e-commerce application built using a microservices architecture. Services like authentication, inventory, payments, and order management operate independently for high availability and performance.",
     image: "/placeholder.svg?height=600&width=800",
-    tags: ["JavaScript", "Weather API", "Chart.js"],
+    tags: ["Next.js", "Node.js", "MongoDB", "Kafka", "Docker", "Microservices"],
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
   },
-]
+];
 
 export default function Projects() {
-  // Filter featured projects for the main display
-  const featuredProjects = projects.filter((project) => project.featured)
+  const featuredProjects = projects.filter((project) => project.featured);
 
   return (
     <section id="projects" className="section-container bg-zinc-950">
       <h2 className="section-title text-center">Featured Projects</h2>
       <p className="text-zinc-300 text-center max-w-2xl mx-auto mb-12">
-        Here are some of my recent projects. Each one was carefully crafted to solve specific problems and deliver
-        exceptional user experiences.
+        Here are some of my recent projects. Each one was carefully crafted to
+        solve specific problems and deliver exceptional user experiences.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featuredProjects.map((project, index) => (
-          <div key={index} className="portfolio-card group h-full flex flex-col">
+          <div
+            key={index}
+            className="portfolio-card group h-full flex flex-col"
+          >
             <div className="relative h-48 overflow-hidden">
               <Image
                 src={project.image || "/placeholder.svg"}
@@ -67,10 +73,15 @@ export default function Projects() {
             </div>
             <div className="p-6 flex-grow flex flex-col">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-zinc-400 mb-4 flex-grow">{project.description}</p>
+              <p className="text-zinc-400 mb-4 flex-grow">
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="text-xs bg-purple-900/50 text-purple-200 px-2 py-1 rounded-full">
+                  <span
+                    key={tagIndex}
+                    className="text-xs bg-purple-900/50 text-purple-200 px-2 py-1 rounded-full"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -83,7 +94,10 @@ export default function Projects() {
                   View Project
                   <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Link>
-                <Link href={project.githubUrl} className="text-zinc-400 hover:text-white transition-colors">
+                <Link
+                  href={project.githubUrl}
+                  className="text-zinc-400 hover:text-white transition-colors"
+                >
                   <Github className="h-5 w-5" />
                 </Link>
               </div>
@@ -98,5 +112,5 @@ export default function Projects() {
         </Link>
       </div>
     </section>
-  )
+  );
 }

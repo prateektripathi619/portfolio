@@ -1,11 +1,9 @@
-"use client"
+"use client";
 
-import type React from "react"
-
-import { useState } from "react"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { useState } from "react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,21 +11,46 @@ export default function Contact() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically handle form submission, like sending to an API
-    console.log("Form submitted:", formData)
-    // Reset form after submission
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    alert("Thank you for your message! I'll get back to you soon.")
-  }
+    e.preventDefault();
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        () => {
+          setSuccessMessage(
+            `Thank you, ${formData.name}! I’ll reach out to you regarding "${formData.subject}".`
+          );
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          setTimeout(() => setSuccessMessage(""), 5000);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error.text);
+          alert("Something went wrong. Please try again later.");
+        }
+      );
+  };
 
   return (
     <section id="contact" className="section-container">
@@ -44,7 +67,7 @@ export default function Contact() {
               <Mail className="h-5 w-5 text-purple-400 mr-3" />
               <h3 className="text-lg font-bold">Email</h3>
             </div>
-            <p className="text-zinc-300">prateektripathi.sae.comp@gmail.com</p>
+            <p className="text-zinc-300">prateekdevtripathi@gmail.com</p>
           </div>
 
           <div className="portfolio-card p-6 mb-6">
@@ -54,6 +77,7 @@ export default function Contact() {
             </div>
             <p className="text-zinc-300">+91 7208124621</p>
           </div>
+
           <div className="portfolio-card p-6 mb-6">
             <div className="flex items-center mb-4">
               <FaWhatsapp className="h-5 w-5 text-purple-400 mr-3" />
@@ -67,7 +91,7 @@ export default function Contact() {
               <MapPin className="h-5 w-5 text-purple-400 mr-3" />
               <h3 className="text-lg font-bold">Location</h3>
             </div>
-            <p className="text-zinc-300">Pune , India </p>
+            <p className="text-zinc-300">India</p>
           </div>
         </div>
 
@@ -153,6 +177,10 @@ export default function Contact() {
               <Send className="h-4 w-4 mr-2" />
               Send Message
             </button>
+
+            {successMessage && (
+              <p className="text-green-400 mt-4">{successMessage}</p>
+            )}
           </form>
         </div>
       </div>

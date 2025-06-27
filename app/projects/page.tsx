@@ -2,56 +2,115 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight, Github, ArrowLeft } from "lucide-react"
 
+
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with product management, cart functionality, and payment processing.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "FINAGER - Financial Tracking Management & Taxation Automation",
+    description:
+      "A comprehensive system designed to streamline financial tracking, automate taxation workflows, and enhance reporting efficiency for institutions and enterprises.",
+    image: "/FINAGER.png?height=600&width=800",
+    tags: [
+      "Node.js",
+      "Express",
+      "Next.js",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Apache Kafka",
+    ],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Swachhta App - Nagar Nigam Raipur",
+    description:
+      "A civic cleanliness management platform developed for Nagar Nigam Raipur, featuring a React Native mobile app for supervisors and a Next.js web admin panel. It utilizes YOLO for image-based task verification, Express.js for backend services, FCM for real-time notifications, and AWS for scalable infrastructure.",
+    image: "/swapcht.png?height=600&width=800",
+    tags: ["React Native", "Next.js", "YOLO", "Express", "FCM", "AWS"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "AI-Based Metallurgical Detection System",
+    description:
+      "An AI-powered web application developed for the Metallurgical Department to detect material defects using binary image segmentation. Integrated user authentication and image analysis workflow. Built with Next.js for the frontend and Express.js for the backend.",
+    image: "/MetaAI.png?height=600&width=800",
+    tags: ["Next.js", "Express", "AI", "Binary Segmentation", "MongoDB", "JWT"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Ticketing Automation System",
+    description:
+      "An AI-powered support and incident management system that leverages BERT for natural language understanding to intelligently categorize and route incoming tickets. Includes automation rules, notification triggers, and a modern dashboard for seamless team coordination and faster resolution cycles.",
+    image: "/Ticketting.png?height=600&width=800",
+    tags: ["Node.js", "Express", "React", "MongoDB", "Automation", "BERT"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+
+  {
+    title: "E-commerce Platform using Microservices",
+    description:
+      "A scalable e-commerce solution architected using microservices for high availability and modularity. Each domain—products, orders, payments, users—is developed as an independent service. Utilizes Docker, Kubernetes, and event-driven communication for seamless deployment and scaling.",
+    image: "/ecommerce.png?height=600&width=800",
+    tags: [
+      "Microservices",
+      "Docker",
+      "Kubernetes",
+      "Node.js",
+      "Next ",
+      "MongoDB",
+      "Apache Kafka",
+      "GSAP",
+    ],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Music Player",
+    description:
+      "A modern and responsive music player built with Next.js featuring playlist management, real-time audio controls, waveform visualization, and support for various audio formats.",
+    image: "/Music.png?height=600&width=800",
+    tags: ["Next.js", "Tailwind CSS", "Howler.js", "Audio APIs"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Movie Application",
+    description:
+      "A feature-rich mobile application built with React Native that fetches real-time movie data from the TMDB API, providing details like trailers, ratings, cast, and search functionality. Built with Appwrite for backend services and MongoDB for database management.",
+    image: "/movie.png?height=600&width=800",
+    tags: [
+      "React Native",
+      "TMDB API",
+      "Appwrite",
+      "MongoDB",
+      "Mobile UI",
+      "REST",
+    ],
     liveUrl: "#",
     githubUrl: "#",
   },
   {
     title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing creative work with a custom CMS for easy updates.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Task Management App",
-    description: "A productivity application for managing tasks, projects, and team collaboration.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Vue.js", "Firebase", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Real-time weather information with location-based forecasts and interactive maps.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["JavaScript", "Weather API", "Chart.js"],
+    description:
+      "A responsive portfolio website showcasing creative work with a custom CMS for easy updates.",
+    image: "/portfolio.png?height=600&width=800",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "EmailJS"],
     liveUrl: "#",
     githubUrl: "#",
   },
   {
     title: "Blog Platform",
-    description: "A content management system for publishing and managing blog posts with user authentication.",
-    image: "/placeholder.svg?height=600&width=800",
+    description:
+      "A content management system for publishing and managing blog posts with user authentication.",
+    image: "/Blog.png?height=600&width=800",
     tags: ["React", "Express", "MongoDB", "JWT"],
     liveUrl: "#",
     githubUrl: "#",
   },
-  {
-    title: "Recipe App",
-    description: "A mobile-responsive application for discovering, saving, and sharing recipes.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React Native", "Firebase", "Redux"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-]
+];
 
 export default function ProjectsPage() {
   return (

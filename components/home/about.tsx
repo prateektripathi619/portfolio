@@ -9,21 +9,35 @@ export default function About() {
         <div className="order-2 md:order-1">
           <h2 className="section-title">About Me</h2>
           <p className="text-zinc-300 mb-6">
-            I'm a passionate designer and developer with over 5 years of experience creating digital products and
-            experiences. I combine technical expertise with creative problem-solving to build solutions that are both
-            functional and beautiful.
+            I’m Prateek — a full-stack developer and creative technologist who
+            blends code with design to craft seamless digital experiences. With
+            over a year of hands-on experience and a strong foundation in
+            Computer Science, I build products that are fast, functional, and
+            beautifully intuitive.
           </p>
           <p className="text-zinc-300 mb-6">
-            My journey in tech began with a degree in Computer Science, followed by work at various agencies and
-            startups where I honed my skills across the full development stack. I'm particularly interested in the
-            intersection of design and technology, creating systems that are intuitive, accessible, and delightful to
-            use.
+            Currently, I’m working as a{" "}
+            <span className="font-semibold text-white">
+              Junior Research Fellow at NIT Raipur (NITRR)
+            </span>
+            , where I dive deeper into advanced computing and real-world
+            problem-solving. My journey has taken me through startups, agencies,
+            and now research — equipping me with a 360° view of software
+            development. I thrive at the intersection of design and technology,
+            creating user-first systems that not only perform — but leave an
+            impression.
           </p>
+
           <p className="text-zinc-300 mb-8">
-            When I'm not coding or designing, you'll find me exploring photography, reading about emerging tech trends,
-            or hiking in the mountains. I believe in continuous learning and am always looking to expand my skillset.
+            When I'm not coding or designing, you'll find me exploring
+            photography, reading about emerging tech trends, or hiking in the
+            mountains. I believe in continuous learning and am always looking to
+            expand my skillset.
           </p>
-          <Link href="/resume.pdf" className="portfolio-button-primary inline-flex items-center">
+          <Link
+            href="/resume.pdf"
+            className="portfolio-button-primary inline-flex items-center"
+          >
             <Download className="mr-2 h-4 w-4" />
             Download Resume
           </Link>
@@ -35,10 +49,10 @@ export default function About() {
             <div className="portfolio-card p-2 relative z-10">
               <div className="w-64 h-64 md:w-80 md:h-80 relative overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Your Name"
+                  src="/profile.jpg"
+                  alt="Prateek Tripathi"
                   width={400}
-                  height={400}
+                  height={600}
                   className="object-cover"
                 />
               </div>
@@ -47,5 +61,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

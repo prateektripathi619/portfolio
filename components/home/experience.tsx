@@ -3,44 +3,38 @@ import { Briefcase, GraduationCap } from "lucide-react"
 export default function Experience() {
   const workExperience = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
+      title: "Junior Research Fellow (Programmer)",
+      company: "NIT Raipur",
+      period: "2024 - Present",
       description:
-        "Lead the development of web applications using React and Next.js. Implemented responsive designs, optimized performance, and mentored junior developers.",
+        "Developing a cutting-edge FinTech product for a government-funded startup using Next.js and Express.js, focusing on scalable architecture and seamless user experience.",
     },
     {
-      title: "UI/UX Designer & Developer",
-      company: "Creative Agency",
-      period: "2018 - 2021",
+      title: "Freelance UI/UX Designer & Frontend Developer",
+      company: "Self-Employed",
+      period: "2024 – 2025",
       description:
-        "Designed and developed user interfaces for various clients. Created wireframes, prototypes, and implemented frontend solutions using modern frameworks.",
-    },
+        "Collaborated with diverse clients to design and develop intuitive user interfaces. Created wireframes, interactive prototypes, and implemented responsive front-end solutions using modern frameworks like React and Tailwind CSS.",
+    }
+    ,
     {
-      title: "Web Developer",
-      company: "Startup Hub",
-      period: "2016 - 2018",
+      title: "Web Developer Intern",
+      company: "InternPe",
+      period: "Mar 2023 – Sep 2024",
       description:
-        "Built and maintained websites and web applications for startups. Worked with HTML, CSS, JavaScript, and various CMS platforms.",
+        "Developed and maintained an Airline Reservation System and other web applications for startups. Utilized HTML, CSS, JavaScript, and CMS platforms to deliver responsive and user-friendly websites.",
     },
-  ]
+  ];
 
   const education = [
     {
-      degree: "Master's in Computer Science",
-      institution: "Tech University",
-      period: "2014 - 2016",
-      description:
-        "Specialized in Human-Computer Interaction and Web Technologies. Thesis on improving user experience in web applications.",
-    },
-    {
       degree: "Bachelor's in Software Engineering",
-      institution: "State University",
-      period: "2010 - 2014",
+      institution: "Savitribai Phule Pune University",
+      period: "2020 - 2024",
       description:
-        "Studied software development principles, algorithms, data structures, and web development fundamentals.",
+        "Focused on core software development principles, including algorithms, data structures, object-oriented programming, and full-stack web development.",
     },
-  ]
+  ];
 
   return (
     <section id="experience" className="section-container bg-zinc-950">

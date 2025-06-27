@@ -9,9 +9,9 @@ const navigation = [
   { name: "About", href: "/#about" },
   { name: "Projects", href: "/#projects" },
   { name: "Skills", href: "/#skills" },
-  { name: "Experience", href: "/#experience" },
-  { name: "Contact", href: "/#contact" },
-]
+  { name: "Contact", href: "/contact" },
+  { name: "TechNews", href: "/news" },
+];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold gradient-text">Prateek Tripathi</span>
+            <span className="text-xl font-bold gradient-text">PrateekDev.in</span>
           </Link>
         </div>
 

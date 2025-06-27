@@ -31,6 +31,26 @@ export default function Skills() {
       ],
     },
     {
+      name: "AI / Machine Learning",
+      skills: [
+        { name: "Machine Learning (ML)", level: 60 },
+        { name: "Deep Learning (DL)", level: 55 },
+        { name: "TensorFlow / Keras", level: 50 },
+        { name: "Python for ML", level: 65 },
+        { name: "Model Evaluation & Tuning", level: 55 },
+      ],
+    },
+    {
+      name: "Cloud & DevOps",
+      skills: [
+        { name: "AWS (EC2, S3, Lambda)", level: 65 },
+        { name: "Docker", level: 70 },
+        { name: "Kubernetes (EKS)", level: 60 },
+        { name: "CI/CD (GitHub Actions)", level: 65 },
+        { name: "Cloud Deployment", level: 60 },
+      ],
+    },
+    {
       name: "Other",
       skills: [
         { name: "Git/GitHub", level: 85 },
@@ -40,7 +60,8 @@ export default function Skills() {
         { name: "SEO", level: 70 },
       ],
     },
-  ]
+  ];
+  
 
   return (
     <section id="skills" className="section-container">
