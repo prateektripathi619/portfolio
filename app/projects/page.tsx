@@ -19,7 +19,7 @@ const projects = [
       "Apache Kafka",
     ],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/FINAGER-Front-end",
   },
   {
     title: "Swachhta App - Nagar Nigam Raipur",
@@ -28,7 +28,7 @@ const projects = [
     image: "/swapcht.png?height=600&width=800",
     tags: ["React Native", "Next.js", "YOLO", "Express", "FCM", "AWS"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/supervisor.cleaners.com",
   },
   {
     title: "AI-Based Metallurgical Detection System",
@@ -74,7 +74,7 @@ const projects = [
     image: "/Music.png?height=600&width=800",
     tags: ["Next.js", "Tailwind CSS", "Howler.js", "Audio APIs"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/music-nextjs",
   },
   {
     title: "Movie Application",
@@ -90,7 +90,7 @@ const projects = [
       "REST",
     ],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/movie",
   },
   {
     title: "Portfolio Website",
@@ -98,8 +98,8 @@ const projects = [
       "A responsive portfolio website showcasing creative work with a custom CMS for easy updates.",
     image: "/portfolio.png?height=600&width=800",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "EmailJS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://portfolio-tan-tau-91.vercel.app/",
+    githubUrl: "https://github.com/prateektripathi619/portfolio",
   },
   {
     title: "Blog Platform",
@@ -108,7 +108,7 @@ const projects = [
     image: "/Blog.png?height=600&width=800",
     tags: ["React", "Express", "MongoDB", "JWT"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/blogify",
   },
 ];
 
