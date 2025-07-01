@@ -10,7 +10,7 @@ const projects = [
     image: "/FINAGER.png?height=600&width=800",
     tags: ["Node.js", "Express", "Next.js", "Docker", "Kubernetes", "AWS"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/FINAGER-Front-end",
     featured: true,
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     image: "/swapcht.png?height=600&width=800",
     tags: ["React Native", "Next.js", "YOLO", "Express", "FCM", "AWS"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/supervisor.cleaners.com",
     featured: true,
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     image: "/Ticketting.png?height=600&width=800",
     tags: ["Node.js", "Express", "React", "MongoDB", "Automation", "BERT"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/BSP-Ticket",
     featured: true,
   },
   {

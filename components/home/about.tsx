@@ -35,7 +35,7 @@ export default function About() {
             expand my skillset.
           </p>
           <Link
-            href="/resume.pdf"
+            href="/PrateekTripathi.pdf"
             className="portfolio-button-primary inline-flex items-center"
           >
             <Download className="mr-2 h-4 w-4" />

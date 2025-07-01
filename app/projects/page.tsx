@@ -37,7 +37,7 @@ const projects = [
     image: "/MetaAI.png?height=600&width=800",
     tags: ["Next.js", "Express", "AI", "Binary Segmentation", "MongoDB", "JWT"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/MetaProject",
   },
   {
     title: "Ticketing Automation System",
@@ -46,7 +46,7 @@ const projects = [
     image: "/Ticketting.png?height=600&width=800",
     tags: ["Node.js", "Express", "React", "MongoDB", "Automation", "BERT"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/prateektripathi619/BSP-Ticket",
   },
 
   {
