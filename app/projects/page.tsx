@@ -50,10 +50,10 @@ const projects = [
   },
 
   {
-    title: "E-commerce Platform using Microservices",
+    title: "KPI-Raipur District Administration ",
     description:
-      "A scalable e-commerce solution architected using microservices for high availability and modularity. Each domain—products, orders, payments, users—is developed as an independent service. Utilizes Docker, Kubernetes, and event-driven communication for seamless deployment and scaling.",
-    image: "/ecommerce.png?height=600&width=800",
+      "Designed a KPI monitoring platform for 300+ officers with interactive scoring and geo-tagged photo logging. Implemented real-time data visualization using GSAP and integrated microservices architecture for scalability.",
+    image: "/KPI.png?height=600&width=800",
     tags: [
       "Microservices",
       "Docker",
@@ -64,8 +64,8 @@ const projects = [
       "Apache Kafka",
       "GSAP",
     ],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://shresthv2.rdmp.in/login",
+    githubUrl: "https://github.com/prateektripathi619/chhattisgarh-portal",
   },
   {
     title: "Music Player",
@@ -89,7 +89,7 @@ const projects = [
       "Mobile UI",
       "REST",
     ],
-    liveUrl: "#",
+    liveUrl: "",
     githubUrl: "https://github.com/prateektripathi619/movie",
   },
   {
