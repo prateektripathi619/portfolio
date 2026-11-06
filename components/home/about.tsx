@@ -35,7 +35,7 @@ export default function About() {
             expand my skillset.
           </p>
           <Link
-            href="/PrateekTripathi.pdf"
+            href="/Prateek_Tripathi_software_eng_2026.pdf"
             className="portfolio-button-primary inline-flex items-center"
           >
             <Download className="mr-2 h-4 w-4" />
@@ -49,7 +49,7 @@ export default function About() {
             <div className="portfolio-card p-2 relative z-10">
               <div className="w-64 h-64 md:w-80 md:h-80 relative overflow-hidden rounded-lg">
                 <Image
-                  src="/profile.jpg"
+                  src="/Github Profile.jpeg"
                   alt="Prateek Tripathi"
                   width={400}
                   height={600}

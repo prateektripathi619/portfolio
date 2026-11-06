@@ -17,7 +17,7 @@ export default function Footer() {
 
           <div className="flex space-x-6">
             <Link
-              href="https://https://github.com/prateektripathi619"
+              href="https://github.com/prateektripathi619"
               className="text-zinc-400 hover:text-white transition-colors"
             >
               <Github size={20} />
